@@ -1,0 +1,184 @@
+/* === GENERAL === */
+.charsheet {
+    min-width: 820px;
+    background: #FFFFFF;
+    background-image: url("https://github.com/GrumpyOldDM/STA_DemoSheet/raw/master/Sheet_blank.PNG");
+    background-repeat: no-repeat;
+    background-position: 0px 40px;
+}
+
+.sheet-section {
+	float: left;
+	width: calc(100% - 85px);
+	margin: 0px 0px 0px 85px;
+	padding: 1px;
+	box-sizing: border-box;
+}
+
+.sheet-half {
+	max-width: calc(50% - 85px); 
+}
+
+
+.sheet-break {
+	clear: both;
+}
+
+
+.sheet-header-main {
+    margin-bottom: 4px;
+    padding: 2px 2px;
+    text-align: right;
+	background: #FFFFFF;
+	color: #FF9900;
+	font-weight: bold;
+}
+
+.sheet-header {
+    margin-bottom: 4px;
+    padding: 2px 4px;
+    border-radius: 25px;
+	background: #FF9900;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+.sheet-break {
+	clear: both;
+}
+
+label,
+select {
+	margin: 0;
+}
+
+textarea {
+	margin: 0;
+	width: 100%;
+	height: 215px;
+	resize: vertical;
+	box-sizing: border-box;
+}
+
+.sheet-repitem,
+.repitem {
+	margin-bottom: 2px;
+}
+
+
+/* Override Roll20 Button styling for something less conspicious */
+button {
+	height: 22px;
+	line-height: 16px;
+	margin: 0 !important;
+	border-radius: 0 !important;
+	background-image: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.repitem button {
+	height: 28px;
+	line-height: 20px;
+}
+
+/* === BASIC === */
+
+.sheet-section-basic tr {
+	margin-left: 5px;
+}
+
+.sheet-section-basic td {
+	padding: 2px;
+}
+
+.sheet-section-basic input[type="number"] {
+	width: 100px;
+}
+
+.sheet-section-basic .sheet-column {
+	width: calc(33% - 200px);
+}
+/* === DETAILS ===*/
+.sheet-section-details {
+	min-width: 400px;
+	float: Right;
+}
+
+.sheet-section-details input {
+	margin-left: 2px;
+	width: calc(100% - 102px);
+}
+
+.sheet-section-details {
+	text-align: right;
+	font-weight: bold;
+	padding: 0 4px;
+}
+
+
+/* === SKILLS === */
+.sheet-section-skills {
+	min-width: 400px;
+}
+
+.sheet-section-skills input {
+	width: 60px;
+}
+
+.sheet-section-skills {
+	text-align: right;
+	font-weight: bold;
+	padding: 0 4px;
+}
+
+.sheet-skill-on {
+	border: 1px solid black;
+}
+
+.sheet-skill-off {
+	background-color: #E3E3E3;
+	border: 1px solid gray;
+}
+
+/* === ASPECT === */
+.sheet-section-aspects input {
+	width: 100%;
+}
+
+/* === STRESS === */
+.sheet-section-stress td {
+	text-align: left;
+	padding-right: 5px;
+}
+
+.sheet-section-stress input {
+	margin-left: 2px;
+}
+
+.sheet-check-on {
+	border: 1px solid black;
+}
+
+.sheet-check-off {
+	background-color: #E3E3E3;
+	border: 1px solid gray;
+}
+
+/* === CONSEQUENCES === */
+.sheet-section-consequences {
+	float: right;
+}
+
+.sheet-section-consequences select {
+	width: 100px;
+	float: left;
+}
+
+.sheet-section-consequences input {
+	margin-left: 2px;
+	width: calc(100% - 102px);
+}
