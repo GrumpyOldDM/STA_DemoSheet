@@ -20,46 +20,123 @@
         <div class="sheet-header">ATTRIBUTES</div>
         <table style="width:100%">
             <tr>
-                <td>CONTROL</td>
-                <td>FITNESS</td>
-                <td>PRESENCE</td>
+                <td><div class="sheet-attribute">CONTROL</div><div class="sheet-center"><input type="number" value="7" min="7" max="12" name="attr_control"></div></td>
+                <td><div class="sheet-attribute">FITNESS</div><div class="sheet-center"><input type="number" value="7" min="7" max="12" name="attr_fitness"></div></td>
+                <td><div class="sheet-attribute">PRESENCE</div><div class="sheet-center"><input type="number" value="7" min="7" max="12" name="attr_presence"></div></td>
             </tr>
             <tr>
-                <td>DARING</td>
-                <td>INSIGHT</td>
-                <td>REASON</td>
+                <td><div class="sheet-attribute">DARING</div><div class="sheet-center"><input style=width:50px type="number" value="7" min="7" max="12" name="attr_daring"></div></td>
+                <td><div class="sheet-attribute">INSIGHT</div><div class="sheet-center"><input style=width:50px type="number" value="7" min="7" max="12" name="attr_insight"></div></td>
+                <td><div class="sheet-attribute">REASON</div><div class="sheet-center"><input style=width:50px type="number" value="7" min="7" max="12" name="attr_reason"></div></td>
             </tr>
         </table>
         <div class="sheet-header">DISCIPLINES</div>
         <table style="width:100%">
             <tr>
-                <td>COMMAND</td>
-                <td>SECURITY</td>
-                <td>SCIENCE</td>
+                <td><div class="sheet-attribute">COMMAND</div><div class="sheet-center"><input style=width:50px type="number" value="1" min="0" max="5" name="attr_command"></div></td>
+                <td><div class="sheet-attribute">SECURITY</div><div class="sheet-center"><input style=width:50px type="number" value="1" min="0" max="5" name="attr_security"></div></td>
+                <td><div class="sheet-attribute">SCIENCE</div><div class="sheet-center"><input style=width:50px type="number" value="1" min="0" max="5" name="attr_science"></div></td>
             </tr>
             <tr>
-                <td>CONN</td>
-                <td>ENGINEERING</td>
-                <td>MEDICINE</td>
+                <td><div class="sheet-attribute">CONN</div><div class="sheet-center"><input style=width:50px type="number" value="1" min="0" max="5" name="attr_conn"></div></td>
+                <td><div class="sheet-attribute">ENGINEERING</div><div class="sheet-center"><input style=width:50px type="number" value="1" min="0" max="5" name="attr_engineering"></div></td>
+                <td><div class="sheet-attribute">MEDICINE</div><div class="sheet-center"><input style=width:50px type="number" value="1" min="0" max="5" name="attr_medicine"></div></td>
             </tr>
         </table>
         <div class="sheet-header">VALUES</div>
+        <textarea style=width:100% type="text" name="attr_values"></textarea>
+        <table style="width:100%">
+            <tr>
+                <td><div class="sheet-attribute">DETERMINATION</div></td> 
+                <td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_det1"></td>
+                <td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_det2"></td>
+                <td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_det3"></td>
+            </tr>
+        </table>
         <div class="sheet-header">TALENTS</div>
+        <textarea style=width:100% type="text" name="attr_talents"></textarea>
         <div class="sheet-header">WEAPONS</div>
+        <table style="width:100%" border="1">
+            <tr>
+                <td>Name/Type: <input style=width:125px type="text" name="attr_wep1_name" /></td>
+                <td>DR: <input style=width:50px type="number" value="0" min="0" name="attr_wep1_dr"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Qualities: <input style=width:77% type="text" name="attr_wep1_qualities" /></td>
+            </tr>
+        </table>
+        <table style="width:100%" border="1">
+            <tr>
+                <td>Name/Type: <input style=width:125px type="text" name="attr_wep2_name" /></td>
+                <td>DR: <input style=width:50px type="number" value="0" min="0" name="attr_wep2_dr"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Qualities: <input style=width:77% type="text" name="attr_wep2_qualities" /></td>
+            </tr>
+        </table>
+        <table style="width:100%" border="1">
+            <tr>
+                <td>Name/Type: <input style=width:125px type="text" name="attr_wep3_name" /></td>
+                <td>DR: <input style=width:50px type="number" value="0" min="0" name="attr_wep3_dr"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Qualities: <input style=width:77% type="text" name="attr_wep3_qualities" /></td>
+            </tr>
+        </table>
     </div>
     <div class="sheet-section sheet-half">
         <div class="sheet-header">FOCUSES</div>
+        <textarea style=width:100% type="text" name="attr_focuses"></textarea>
         <div class="sheet-header">STRESS</div>
+        <div class="sheet-center">
+        <input style=width:50px type="number" name="attr_stress" value="@{fitness}+@{security}" disabled="true">  
+        </div>
         <div class="sheet-header">INJURIES</div>
+        <textarea style=width:100% type="text" name="attr_injuries"></textarea>
         <div class="sheet-header">OTHER EQUIPMENT</div>
+        <textarea style=width:100% type="text" name="attr_other-equip"></textarea>
+        <div class="sheet-header">MOMENTUM</div>
+        <div class="sheet-center">
+        <table style="width:100%">
+            <tr>
+                <td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_momentum1"></td> 
+                <td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_momentum2"></td>
+                <td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_momentum3"></td>
+                <td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_momentum4"></td>
+                <td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_momentum5"></td>
+                <td><input class="sheet-check-off" style=width:15px type="checkbox" name="attr_momentum6"></td>
+            </tr>
+        </table>
+        </div>
     </div>
 </div>
 
 <div class="sheet-break"></div>
-<div class="sheet-header">More Additional Notes</div>
+
+<div class="sheet-break"></div>
+<div class="sheet-header">Additional Notes</div>
     <textarea name="attr_More_add_Notes"></textarea>
-<b>you need to create a rollable table called "Combat-Dice" with name values of "1","2","-","-","-","Special Effect"</b>
+<br />
+<b>you need to create a rollable table called "Challenge-Dice" with name values of "1","2","1 plus Effect","1 plus Effect","0","0"</b>
 </div>
+
+
+<rolltemplate class="sheet-rolltemplate-lcars">
+    <table>
+        <tr><th>{{#roll_name}}{{roll_name}}{{/roll_name}}</th></tr>
+        <tr><td class="attr">
+            {{#attr}}
+                {{attr}}({{attr_num}})
+            {{/attr}}
+            {{#discp}}
+                 + {{discp}}({{discp_num}})
+            {{/discp}}
+        </td></tr>
+        <tr>
+            <td class="result">{{result}} Successes</td>        
+        </tr>
+    </table>
+</rolltemplate>
 
 
 
