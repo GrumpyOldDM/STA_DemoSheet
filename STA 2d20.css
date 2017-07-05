@@ -106,28 +106,31 @@ button {
 
 /* Rolltemplate */
 .sheet-rolltemplate-lcars table {
-    width: 189px;
-    height: 189px;
+    width: 230px;
     padding: 2px;
     font-weight: bold;
-    background-color: #000000;
-    color: #ffffff;
+    background: url(https://github.com/GrumpyOldDM/STA_DemoSheet/raw/master/sheet_roll_temp_lcars_full.png) top left;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    color: #000000;
     border-spacing: 0;
+    border:1px solid #9999cc;
 }
  
 .sheet-rolltemplate-lcars th {
-	background-color: #FF9900;
-	color: #000000;
-	border-radius: 25px;
+	padding-left: 50px;
+	padding-Top: 18px;
 	font-size: 1.2em;
     text-align: center;
+    border:none;
 }
  
  
 .sheet-rolltemplate-lcars td {
-    padding-left: 20px;
+    padding-left: 50px;
     font-size: 1.0em;
     vertical-align: top;
+    border:none;
 }
  
 .sheet-rolltemplate-lcars .sheet-result {
