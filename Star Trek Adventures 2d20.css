@@ -128,8 +128,8 @@ div.sheet-tab-content {
     margin-bottom: 4px;
     padding: 2px 4px;
     border-radius: 25px;
-	background: #FF3300;
-	color: black;
+	background: #ff3300;
+	color: white;
 	text-align: center;
 	font-weight: bold; 
 }
@@ -233,7 +233,7 @@ button {
 }
  
 .sheet-rolltemplate-lcars .inlinerollresult.fullfail {
-    color: #000000;
+    color: #FF3300;
     border: none;
 }
  
