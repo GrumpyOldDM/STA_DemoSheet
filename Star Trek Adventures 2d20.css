@@ -460,6 +460,7 @@ button[type="roll"]:before {
 input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
   width: 40px;
   height: 20px;
   border: 1px solid #cc99cc;
@@ -512,8 +513,14 @@ input[type="number"] {
   border-bottom-right-radius: 20px;
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: textfield;
   margin-right: 7px;
 }
+
+  input[type="number"]:focus,
+  input[type="number"]:hover {
+    -moz-appearance:number-input;
+  }
 
 .sheet-attributecontainer input[type="number"] {
   border-color: darkviolet;
