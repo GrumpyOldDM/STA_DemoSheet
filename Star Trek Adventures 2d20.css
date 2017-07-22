@@ -447,26 +447,55 @@ button[type="roll"]:before {
 .sheet-attributecontainer input[type="text"],
 .sheet-weaponscontainer input[type="text"]
 {
-  border: 2px solid;
-  font-weight: bold;
-  font-size: 9px;
-  line-height: 9px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  padding-right: 15px;
-  padding-left: 3px;
+    border: 2px solid;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 9px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-right: 15px;
+    padding-left: 3px;
 }
 
 input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 40px;
-  height: 20px;
-  border: 1px solid #cc99cc;
-  border-radius: 20px;
-  background-color: transparent;
-  margin-left: 15px;
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+    top: -5px;
+    margin-right: -42px;
+    width: 40px;
+    height: 20px;
+    border: 1px dotted red;
+    border-radius: 20px;
+    background-color: transparent;
+    margin-left: 15px;
+}
+
+input[type="checkbox"] + span {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border: 1px solid #cc99cc;
+    border-radius: 20px;
+    background-color: transparent;
+    margin: 0px;
+}
+
+input[type="checkbox"]:checked + span {
+  background-color: #cc99cc;
+}
+
+.sheet-determination-values,
+.sheet-momentum-values
+{
+    display: inline-block;
+    padding: 0px;
+    height: 15.5px;
+    float: right;
+    line-height: 20px;
+    margin-right: 3px;
+    position: relative;
+    top: -2px;
 }
 
 .sheet-controls {
@@ -488,19 +517,30 @@ input[type="checkbox"] {
     background-position: center center;
 }
 
-.sheet-controls input[type="checkbox"]:checked {
+.sheet-controls input[type="checkbox"]:checked + span {
     background-color: #ff9900;
-    background-image: url("https://raw.githubusercontent.com/RandallBurt/STA_DemoSheet/master/settings_on.png");
+    color: white;
+}
+
+div.sheet-breaches {
+    width: 138px;
 }
 
 .sheet-attributecontainer .sheet-breaches input[type="checkbox"] {
+    position: relative;
+    top: 0px;
+    left: -16.25px;
     width: 12px;
     height: 10px;
-    margin: 1px;
+
 }
 
-input[type="checkbox"]:checked {
-  background-color: #cc99cc;
+.sheet-attributecontainer .sheet-breaches input[type="checkbox"] + span
+{
+    margin-left: 12px;
+    margin-top 25px;
+    width: 12px;
+    height: 10px;
 }
 
 input[type="number"] {
@@ -517,10 +557,11 @@ input[type="number"] {
   margin-right: 7px;
 }
 
-  input[type="number"]:focus,
-  input[type="number"]:hover {
-    -moz-appearance:number-input;
-  }
+input[type="number"]:hover,
+input[type="number"]:focus
+{
+  -moz-appearance: number-input;
+}
 
 .sheet-attributecontainer input[type="number"] {
   border-color: darkviolet;
@@ -668,6 +709,8 @@ textarea {
     border: none;
 }
 
-input[type="hidden"][value="false"] + input[type="checkbox"] {
+input[type="hidden"][value="false"] + input[type="checkbox"],
+input[type="hidden"][value="false"] + input[type="checkbox"] + span,
+{
     display: none;
 } 
