@@ -506,15 +506,30 @@ input[type="checkbox"]:checked + span {
 }
 
 .sheet-controls input[type="checkbox"] {
+    opacity: 0;
+    z-index: 1;
     position: relative;
     top: -7px;
-    margin: 0px;
+    margin-right: -36px;
+    height: 20px;
     width: 30px;
+}
+
+.sheet-controls input[type="checkbox"] + span {
+    position: relative;
+    top: -4px;
+    left: 5px;
+    font-family: pictos;
+    text-align: center;
+    font-size: 18px;
+    color: #ff9900;
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    border: 1px solid #cc99cc;
+    border-radius: 20px;
+    background-color: transparent;
     border-color: #ff9900;
-    background-image: url("https://raw.githubusercontent.com/RandallBurt/STA_DemoSheet/master/settings.png");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 .sheet-controls input[type="checkbox"]:checked + span {
@@ -532,7 +547,6 @@ div.sheet-breaches {
     left: -16.25px;
     width: 12px;
     height: 10px;
-
 }
 
 .sheet-attributecontainer .sheet-breaches input[type="checkbox"] + span
@@ -601,11 +615,11 @@ textarea {
   width: 100%;
   color: #9370DB;
   resize: vertical;
-  background-attachment: local;
   background-image:
     linear-gradient(to right, transparent 15px, transparent 15px),
     linear-gradient(to left, transparent 15px, transparent 15px),
     repeating-linear-gradient(transparent, transparent 30px, #9370DB 30px, #9370DB 31px, white 31px);
+  background-attachment: local;
   line-height: 31px;
   font-size: 15px;
   padding: 8px 5px;
@@ -624,12 +638,6 @@ textarea {
     color: #9370DB;
 }
 
-.sheet-momentum-values,
-.sheet-determination-values
-{
-    display: inline-block;
-    float: right;
-}
 
 .sheet-values textarea,
 .sheet-injuries textarea {
